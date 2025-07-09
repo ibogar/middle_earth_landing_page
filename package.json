@@ -1,0 +1,24 @@
+{
+  "name": "middle_earth_landing_page",
+  "version": "1.0.0",
+  "description": "Project 4 - developed in the fullstack developer course from EBAC",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibogar/middle_earth_landing_page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ibogar/middle_earth_landing_page/issues"
+  },
+  "homepage": "https://github.com/ibogar/middle_earth_landing_page#readme",
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "sass": "^1.89.2"
+  }
+}
