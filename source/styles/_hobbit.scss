@@ -1,0 +1,18 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.hobbit__content {
+    @include section-layout;
+    flex-direction: row-reverse;
+    background-color: $lightShadow;
+
+    &__image {
+        order: 0;
+    }
+
+    &__text {
+        order: 1;
+    }
+
+    @include responsive-section;
+}

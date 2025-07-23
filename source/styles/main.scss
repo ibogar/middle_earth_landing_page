@@ -1,0 +1,41 @@
+@use "variables" as *;
+@use "hero";
+@use "about_author";
+@use "hobbit";
+@use "lord_of_the_rings";
+@use "other_stories";
+
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Pirata+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $lightColor;
+    font-family: "Pirata One", system-ui;
+}
+
+.footer {
+    padding: 4rem;
+    text-align: center;
+    color: $darkColor;
+    background-color: $lightShadow;
+
+    &__content {
+        max-width: 80vw;
+        margin: 0 auto;
+        border-top: 1px solid $darkColor;
+        padding-top: 2rem;
+
+        p {
+            padding-bottom: .5rem;
+        }
+        a {
+            text-decoration: none;
+            color: $darkColor
+        }
+    }
+}

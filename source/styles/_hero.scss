@@ -1,0 +1,56 @@
+@use "variables" as *;
+
+.hero {
+    position: relative;
+    padding: 5.6vh;
+    min-height: 80vh;
+    background-image: url(../images/mithrim_painting.webp);
+    background-size: cover;       
+    background-repeat: no-repeat; 
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__text {
+    position: absolute;
+    color: $darkColor;
+    font-family: "Imperial Script", cursive;
+    font-size: 4rem;
+    font-weight: bold;
+    background-color: transparent;
+
+        &--step1 {
+        top: 10%;
+        right: 5%;
+        }
+
+        &--step2 {
+        top: 40%;
+        left: 25%;
+        }
+
+        &--step3 {
+        bottom: 10%;
+        left: 5%;
+        }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4vh;
+    text-align: center;
+
+    &__text {
+      position: static;
+      transform: none;
+      margin: 1rem 0;
+      font-size: 2.5rem;
+    }
+  }
+}

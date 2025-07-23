@@ -1,0 +1,16 @@
+@use "mixins" as *;
+
+.lord-of-the-rings__content {
+    @include section-layout;
+    flex-direction: row;
+
+        &__image {
+        order: 0;
+    }
+
+        &__text {
+        order: 1;
+    }
+
+    @include responsive-section;
+}
