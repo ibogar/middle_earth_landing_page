@@ -18,13 +18,7 @@ function minifyImg() {
         .pipe(gulp.dest('./dist/images'));
 }
 
-function watchFiles() {
-    gulp.watch('./source/styles/*.scss', compileSass);
-    gulp.watch('./source/images/*', minifyImg);
-}
-
 exports.default = gulp.series(
     compileSass,
-    minifyImg,
-    watchFiles
+    minifyImg
 );
